@@ -4,6 +4,8 @@
 #include <stdlib.h> //for srand() & rand function
 #include <ctime>
 #include <iomanip>
+
+using namespace std;
 /* run this program using the console pauser or add your own getch, system(
 ) or input loop */
 /*branch name
@@ -40,6 +42,15 @@ a[i] = rand()%30; //30 for get number in poriod of 0 ~ 30
 
 }
 
+//show array
+
+cout<<"Show array Before sort : "<<endl;
+
+for(int i = 0; i<len; ++i)
+{
+    cout<<"a["<<i<<"] = "<<a[i];
+    cout<<endl;
+}
 
 
 
