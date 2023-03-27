@@ -52,6 +52,11 @@ for(int i = 0; i<len; ++i)
     cout<<endl;
 }
 
+//sepwrator
+
+cout<<endl<<endl<<"--------------------------------------"<<endl<<endl;
+
+
 
 
 
@@ -62,3 +67,13 @@ getch();
 //function variable
 //--------------------------
 //functions
+
+//Create function for swap two values
+
+void swap(int& a,int& b)
+{
+    int temp;
+    temp = a;
+    a = b;
+    b = temp;
+}
