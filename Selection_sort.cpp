@@ -47,7 +47,7 @@ a[i] = rand()%30; //30 for get number in poriod of 0 ~ 30
 
 }
 
-//show array
+//show array Before sort 
 
 cout<<"Show array Before sort : "<<endl;
 
@@ -63,7 +63,17 @@ cout<<endl<<endl<<"--------------------------------------"<<endl<<endl;
 
 //selection sort
 
+selection_sort(a , len);
 
+//show array after sort 
+
+cout<<"Show array after sort : "<<endl;
+
+for(int i = 0; i<len; ++i)
+{
+    cout<<"a["<<i<<"] = "<<a[i];
+    cout<<endl;
+}
 
 
 
@@ -115,9 +125,9 @@ for( ; x<end; ++x)
     if (*p < *m)
     m = p;
 
-//swap index
-    swap(*x , *m);
  }
+ //swap index
+    swap(*x , *m);
 
 }
 
