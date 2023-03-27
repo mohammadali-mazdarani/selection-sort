@@ -14,6 +14,11 @@ using namespace std;
 *
 */
 //prototype
+
+void swap(int& a,int& b);
+
+void selection_sort(int *x,int size);
+
 //--------------------------
 //micro
 //---------------------
@@ -56,6 +61,7 @@ for(int i = 0; i<len; ++i)
 
 cout<<endl<<endl<<"--------------------------------------"<<endl<<endl;
 
+//selection sort
 
 
 
@@ -76,4 +82,45 @@ void swap(int& a,int& b)
     temp = a;
     a = b;
     b = temp;
+}
+
+//Create function for selection sort
+
+//*x is pointer to array
+//size is length of array
+void selection_sort(int *x,int size)
+{
+
+int *p , *m , *end;
+
+//*m is minimum pointer in selection sort assumn m is the first of array is minimum
+
+//*end address of last index of array
+
+//end pointer to last index of array
+
+end = x + size -1;
+
+//loop for selection sort array
+
+//this loop for level's number
+for( ; x<end; ++x)
+{
+ 
+ m = x;
+
+//this loop for find minimum number
+ for(p = x+1; p <= end; ++p)
+ {
+    if (*p < *m)
+    m = p;
+
+//swap index
+    swap(*x , *m);
+ }
+
+}
+
+
+
 }
